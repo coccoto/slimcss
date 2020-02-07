@@ -1,0 +1,15 @@
+.e-height
+
+    @for $i from 0 through 200
+        $serial: $i / 4
+        $replace: replace('.', '_', #{$serial})
+
+        &-rem-#{$replace}
+            height: #{$serial}rem
+
+    @for $i from 0 through 100
+        &-percent-#{$i}
+            height: percentage($i / 100)
+
+        &-vh-#{$i}
+            height: #{$i}vh

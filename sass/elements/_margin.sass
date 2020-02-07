@@ -1,0 +1,12 @@
+.e-margin
+
+    @for $i from 0 through 200
+        $serial: $i / 4
+        $replace: replace('.', '_', #{$serial})
+
+        &-#{$replace}
+            margin: #{$serial}rem
+
+        @each $value in ('top', 'right', 'bottom', 'left')
+            &-#{$value}-#{$replace}
+                margin-#{$value}: #{$serial}

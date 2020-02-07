@@ -1,0 +1,11 @@
+.e-center
+
+    &-text
+        text-align: center
+
+    @each $value in ('10', '01', '11')
+        &-items-#{$value}
+            +grid('items', number($value))
+
+        &-content-#{$value}
+            +grid('content', number($value))

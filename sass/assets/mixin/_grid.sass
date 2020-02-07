@@ -1,0 +1,14 @@
+//
+// @param string $property
+// @param number $bool
+// @param string $place: center
+//
+@mixin grid($property, $bool, $place: center)
+    display: grid
+
+    @if $bool == 10
+        justify-#{$property}: $place
+    @else if $bool == 01
+        align-#{$property}: $place
+    @else if $bool == 11
+        place-#{$property}: $place

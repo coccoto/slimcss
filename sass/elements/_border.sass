@@ -1,0 +1,9 @@
+.e-border
+
+    @each $name, $color in $colors
+        &-#{$name}
+            border: 1px solid $color
+
+        @each $value in ('top', 'right', 'bottom', 'left')
+            &-#{$value}-#{$name}
+                border-#{$value}: 1px solid $color
