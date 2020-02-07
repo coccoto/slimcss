@@ -1,0 +1,15 @@
+.e-width
+
+    @for $i from 0 through 200
+        $serial: $i / 4
+        $replace: replace('.', '_', #{$serial})
+
+        &-rem-#{$replace}
+            width: #{$serial}rem
+
+    @for $i from 0 through 100
+        &-percent-#{$i}
+            width: percentage($i / 100)
+
+        &-vw-#{$i}
+            width: #{$i}vw

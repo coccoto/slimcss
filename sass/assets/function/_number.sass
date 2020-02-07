@@ -1,0 +1,35 @@
+//
+// @param string $string The string to be converted to a number
+// @return number - Updated numuber
+//
+@function number($string)
+    $result: 0
+    $decimal: 1
+    $minus: false
+    $float: false
+
+    $len: str-length($string)
+
+    $map: ('0': 0, '1': 1, '2': 2, '3': 3, '4': 4)
+    $map: map-merge($map, ('5': 5, '6': 6, '7': 7, '8': 8, '9': 9))
+
+    @for $i from 1 through $len
+        $character: str-slice($string, $i, $i)
+        $number: map-get($map, $character)
+
+        @if $character == '-'
+            $minus: true
+        @else if $character == '.'
+            $float: true
+        @else
+            $result: $result * 10 + $number
+
+            @if $float
+                $decimal: $decimal * 10
+
+    @if not $minus
+        $result: $result / $decimal
+    @else
+        $result: -($result / $decimal)
+
+    @return $result

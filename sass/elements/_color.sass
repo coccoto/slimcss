@@ -1,0 +1,8 @@
+.e-color
+
+    @each $name, $color in $colors
+        &-#{$name}
+            color: $color
+
+        &-back-#{$name}
+            background-color: $color

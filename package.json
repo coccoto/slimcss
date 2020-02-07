@@ -1,0 +1,16 @@
+{
+  "name": "slimcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/style.sass css/style.css --output-style expanded --importer node_modules/node-sass-glob-importer/dist/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "node-sass-glob-importer": "^5.3.2"
+  }
+}

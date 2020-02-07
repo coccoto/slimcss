@@ -1,0 +1,14 @@
+//
+// @param string $serach Search target
+// @param string $push Replacement character
+// @param string $subject Initial string
+// @return string - Updated string
+//
+@function replace($search, $push, $subject)
+    $index: str-index($subject, $search)
+
+    @while $index != null
+        $subject: str-slice($subject, 0, $index - 1) + $push + str-slice($subject, $index + 1)
+        $index: str-index($subject, $search)
+
+    @return $subject
