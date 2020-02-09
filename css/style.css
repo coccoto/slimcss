@@ -305,19 +305,19 @@ input, button, textarea, select {
 }
 
 .e-display-block {
-  display: "block";
+  display: block;
 }
 
 .e-display-grid {
-  display: "grid";
+  display: grid;
 }
 
 .e-display-flex {
-  display: "flex";
+  display: flex;
 }
 
 .e-display-none {
-  display: "none";
+  display: none;
 }
 
 .e-font-0 {

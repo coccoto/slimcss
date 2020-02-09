@@ -2,4 +2,4 @@
 
     @each $value in ('block', 'grid', 'flex', 'none')
         &-#{$value}
-            display: $value
+            display: unquote($value)
