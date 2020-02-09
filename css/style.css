@@ -43,6 +43,7 @@ input, button, textarea, select {
   background: none;
   font: inherit;
   border: none;
+  outline: none;
 }
 
 .e-border-black {
@@ -301,6 +302,22 @@ input, button, textarea, select {
 
 .e-color-back-theme-green {
   background-color: #51a1a2;
+}
+
+.e-display-block {
+  display: "block";
+}
+
+.e-display-grid {
+  display: "grid";
+}
+
+.e-display-flex {
+  display: "flex";
+}
+
+.e-display-none {
+  display: "none";
 }
 
 .e-font-0 {
