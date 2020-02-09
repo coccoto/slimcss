@@ -5,7 +5,7 @@
 
     @each $value in ('10', '01', '11')
         &-items-#{$value}
-            +grid('items', number($value))
+            @include grid('items', number($value))
 
         &-content-#{$value}
-            +grid('content', number($value))
+            @include grid('content', number($value))
