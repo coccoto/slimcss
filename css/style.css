@@ -10760,6 +10760,18 @@ input, button, textarea, select {
   padding-left: 50rem;
 }
 
+.e-select-none {
+  user-select: none;
+}
+
+.e-select-text {
+  user-select: text;
+}
+
+.e-select-all {
+  user-select: all;
+}
+
 .e-width-rem-0 {
   width: 0rem;
 }
