@@ -8,7 +8,10 @@
 
     @if $bool == 10
         justify-#{$property}: $place
+
     @else if $bool == 01
         align-#{$property}: $place
+
     @else if $bool == 11
-        place-#{$property}: $place
+        justify-#{$property}: $place
+        align-#{$property}: $place
