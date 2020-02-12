@@ -232,12 +232,14 @@ input, button, textarea, select {
 
 .e-center-items-11 {
   display: grid;
-  place-items: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .e-center-content-11 {
   display: grid;
-  place-content: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .e-color-black {
