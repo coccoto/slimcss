@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass sass/style.sass css/style.css --output-style expanded --importer node_modules/node-sass-glob-importer/dist/cli.js"
+    "start": "node-sass sass/style.sass css/style.css --output-style expanded --importer node_modules/node-sass-glob-importer/dist/cli.js",
+    "production": "node-sass sass/style.sass css/style.css --output-style compressed --importer node_modules/node-sass-glob-importer/dist/cli.js"
   },
   "keywords": [],
   "author": "",
